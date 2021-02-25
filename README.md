@@ -1,6 +1,6 @@
 # **React Calculator Project**
 
-This is a solo projects at the end of the of the Microverse Main Technical Curriculum of the JavaScript section. It's a real-world-like project, built with business specifications to improve and test the achievement of technical and soft skills gained during this section of the program. The main objective was design a game and implement it using the JavaScript Phaser 3 library.
+In this project, I built a Calculator using React. The main objective of this project is to exercise the basics elements of the React library.
 
 ## **Built With**
 
