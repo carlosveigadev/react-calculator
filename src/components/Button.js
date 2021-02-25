@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-const Button = ({ name }) => {
-  <button type="button">{name}</button>;
-};
+const Button = ({ name }) => (
+  <button type="button">{name}</button>
+);
 
-Button.propTypes = { result: PropTypes.string };
+Button.propTypes = { name: PropTypes.string.isRequired };
 
 export default Button;
