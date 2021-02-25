@@ -5,3 +5,5 @@ const Button = ({ name }) => {
 };
 
 Button.propTypes = { result: PropTypes.string };
+
+export default Button;
