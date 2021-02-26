@@ -1,6 +1,5 @@
 const calculate = (data, buttonName) => {
-  let { total, next } = data;
-  const { operation } = data;
+  let { total, next, operation } = data;
 
   if (buttonName === '+/-') {
     total *= -1;
@@ -8,6 +7,7 @@ const calculate = (data, buttonName) => {
   } else if (buttonName === 'AC') {
     total = 0;
     next = 0;
+    operation = null;
   } else if (buttonName === '=') {
     total = operation(total, next, buttonName);
   }
