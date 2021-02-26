@@ -1,5 +1,3 @@
-// import operation from './operate';
-
 const calculate = (data, buttonName) => {
   let { total, next } = data;
   const { operation } = data;
@@ -11,9 +9,9 @@ const calculate = (data, buttonName) => {
     total = 0;
     next = 0;
   } else if (buttonName === '=') {
-    total = operation(total, next);
+    total = operation(total, next, buttonName);
   }
-  return { total, next };
+  return { total, next, operation };
 };
 
 export default calculate;
