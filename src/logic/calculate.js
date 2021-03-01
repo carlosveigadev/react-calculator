@@ -19,9 +19,9 @@ const calculate = (data, buttonName) => {
     } else {
       total = operate(total, next, operation);
     }
-  } else if (operation) {
+  } else if (operation !== null) {
     total = operate(total, next, operation);
-  } else if (next === null) {
+  } else if (next !== null) {
     total = next;
   } else {
     operation = buttonName;
