@@ -5,15 +5,15 @@ const operate = (numberOne, numberTwo, operation) => {
   const secondNum = new Big(numberTwo);
 
   if (operation === '-') {
-    return firstNum - secondNum;
+    return firstNum.minus(secondNum);
   } if (operation === '+') {
-    return firstNum + secondNum;
+    return firstNum.plus(secondNum);
   } if (operation === '*') {
-    return firstNum * secondNum;
+    return firstNum.times(secondNum);
   } if (operation === '÷') {
-    return firstNum / secondNum;
+    return firstNum.div(secondNum);
   } if (operation === '%') {
-    return (firstNum / 100) * secondNum;
+    return (firstNum.div(100)).times(secondNum);
   }
   return 'Error';
 };
