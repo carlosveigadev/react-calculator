@@ -12,8 +12,9 @@ const operate = (numberOne, numberTwo, operation) => {
     return firstNum * secondNum;
   } if (operation === '÷') {
     return firstNum / secondNum;
+  } if (operation === '%') {
+    return (firstNum / 100) * secondNum;
   }
-  return (firstNum / 100) * secondNum;
 };
 
 export default operate;
