@@ -1,7 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const firstNum = new Big(numberOne);
+  // console.log(numberOne, numberTwo, operation);
+  const firstNum = new Big(numberOne.to_int);
   const secondNum = new Big(numberTwo);
 
   if (operation === '-') {
