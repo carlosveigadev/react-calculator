@@ -15,6 +15,7 @@ const operate = (numberOne, numberTwo, operation) => {
   } if (operation === '%') {
     return (firstNum / 100) * secondNum;
   }
+  return 'Error';
 };
 
 export default operate;
