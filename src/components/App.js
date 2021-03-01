@@ -12,7 +12,7 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
-      operation: null,
+      // operation: null,
     };
   }
 
@@ -22,9 +22,17 @@ class App extends React.Component {
 
   render() {
     const { total, next } = this.state;
+
+    let showResult;
+    if (!total) {
+      showResult = total;
+    } else if (!next) { showResult = next; } else {
+      showResult = '0';
+    }
+
     return (
       <>
-        <Display result={!total ? total : next} />
+        <Display result={showResult} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
