@@ -2,9 +2,11 @@ import operate from './operate';
 
 const calculate = (data, buttonName) => {
   let { total, next, operation } = data;
-  const nums = ['.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  console.log(data);
+  console.log(buttonName);
+  const numbers = ['.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-  if (nums.includes(buttonName)) {
+  if (numbers.includes(buttonName)) {
     next = next === null ? buttonName : next.concat(buttonName);
   } else if (buttonName === '+/-') {
     total = operate(total, '-1', 'X');
