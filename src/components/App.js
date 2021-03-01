@@ -27,9 +27,9 @@ class App extends React.Component {
     const { total, next } = this.state;
 
     let showResult;
-    if (!total) {
+    if (total !== null) {
       showResult = total;
-    } else if (!next) { showResult = next; } else {
+    } else if (next !== null) { showResult = next; } else {
       showResult = '0';
     }
 
