@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import mainStyle from '../styles/Main.module.css';
+import styles from '../styles/style.module.css';
 
 const Display = ({ result }) => (
-  <div className={mainStyle.flex}>
+  <div className={styles.display}>
     <h1>{result}</h1>
   </div>
 );

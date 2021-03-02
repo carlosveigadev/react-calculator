@@ -1,0 +1,12 @@
+.app {
+  /* display: flex; */
+  width: 700px;
+}
+
+.display {
+  display: flex;
+}
+
+.buttonPanel {
+  display: flex;
+}
