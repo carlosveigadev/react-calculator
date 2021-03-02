@@ -26,13 +26,16 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div>
-        <h1>Let&apos;s do some math!</h1>
+      <div className={styles.flex}>
+        <div className={styles.text}>
+          <h1>Let&apos;s do some math!</h1>
+        </div>
+        <div className={styles.app}>
+          <Display result={showResult} />
+          <ButtonPanel clickHandler={handleClick} />
+        </div>
       </div>
-      <div className={styles.app}>
-        <Display result={showResult} />
-        <ButtonPanel clickHandler={handleClick} />
-      </div>
+
     </>
   );
 };

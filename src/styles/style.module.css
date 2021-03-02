@@ -5,6 +5,63 @@
   src: url(./Digital7-1e1Z.ttf);
 }
 
+body {
+  background-color: #d0f4de;
+  color: #476a6f;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  padding: 2em 2em;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcf6bd;
+  padding: 0 1em;
+  margin: 0;
+  font-size: 1.5em;
+  color: #476a6f;
+}
+
+.links > * {
+  padding: 0 0.5em;
+  text-decoration: none;
+  color: #476a6f;
+}
+
+.links > *:hover {
+  color: #d0f4de;
+}
+
+.links > *:visited {
+  text-decoration: none;
+}
+
+.links > *:active {
+  color: #d0f4de;
+}
+
+.quote {
+  margin-top: 3em;
+  padding: 0 3em;
+  text-align: center;
+}
+
+.home {
+  padding: 0 0.5em;
+}
+
+.home p {
+  margin: 2em 0;
+}
+
 .app {
   /* display: flex; */
   width: 700px;
