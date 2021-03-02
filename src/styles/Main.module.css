@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+  border: 1px solid red;
+}
+
+.width {
+  width: 700px;
+}
