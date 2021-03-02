@@ -11,11 +11,13 @@ const App = () => {
     setValues(calculate(values, buttonName));
   };
 
-  const { total, next } = values;
+  const { total, next, operation } = values;
 
   let showResult;
   if (next !== null) {
     showResult = next;
+  } else if (operation !== null) {
+    showResult = operation;
   } else if (total !== null) { showResult = total; } else {
     showResult = '0';
   }
