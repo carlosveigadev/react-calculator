@@ -9,6 +9,8 @@ const Button = ({ name, clickHandler }) => {
   const checkButton = name => {
     if (name === '0') {
       return [styles.button, styles.button50].join(' ');
+    } if (name === '÷' || name === 'x' || name === '-' || name === '+' || name === '=') {
+      return [styles.button, styles.buttonOrange].join(' ');
     }
     return styles.button;
   };

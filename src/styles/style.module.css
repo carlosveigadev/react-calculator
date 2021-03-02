@@ -47,3 +47,11 @@ body {
 .button50 {
   width: 50%;
 }
+
+.buttonOrange {
+  background-color: orange;
+}
+
+.buttonOrange:hover {
+  background-color: orangered;
+}
