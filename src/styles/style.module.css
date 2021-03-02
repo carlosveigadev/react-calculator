@@ -19,4 +19,18 @@
 
 .buttonPanel {
   display: flex;
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  border: lightgrey;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button0 {
+  width: 50%;
 }

@@ -1,12 +1,20 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/style.module.css';
 
 const Button = ({ name, clickHandler }) => {
   const handleClick = () => {
     clickHandler(name);
   };
 
+  const checkButton = name => {
+    if (name === '0') {
+      return styles.button0;
+    }
+    return styles.button;
+  };
+
   return (
-    <button type="button" onClick={handleClick}>{name}</button>
+    <button className={checkButton(name)} type="button" onClick={handleClick}>{name}</button>
   );
 };
 
