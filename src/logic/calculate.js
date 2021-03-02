@@ -18,8 +18,9 @@ const calculate = (data, buttonName) => {
         operation = null;
         break;
       case '=':
-        // check operation is divisian and next is 0 show error
-        if (total !== null && operation !== null) {
+        if (operation === '÷' && next === '0') {
+          total = 'Error, You could destroy the world if divide by 0.';
+        } else if (total !== null && operation !== null) {
           total = operate(total, next, operation);
         } else {
           total = next;
@@ -29,33 +30,27 @@ const calculate = (data, buttonName) => {
         break;
 
       default:
-        // check operation is divisian and next is 0 show error
-        // - check if operation is nill and if next is nill -1
-        // - check if operation is nill (* or /) and if next is nill -1
-        if (operation !== null && total !== null) {
-          total = operate(next, total, operation);
-        } else if (next !== null) {
-          operation = buttonName;
-          total = next;
+        if (operation === '÷' && next === '0') {
+          total = 'Error, You could destroy the world if you divide by 0.';
+          operation = null;
+          next = null;
+        } else if ((operation === null || operation === '÷' || operation === 'X') && buttonName === '-' && next === null) {
+          next = buttonName;
         } else {
-          operation = buttonName;
+          if (operation !== null && total !== null) {
+            total = operate(next, total, operation);
+          } else if (next !== null) {
+            operation = buttonName;
+            total = next;
+          } else {
+            operation = buttonName;
+          }
+          next = null;
         }
-        next = null;
         break;
     }
   }
   return { total, next, operation };
 };
-
-//   } else if (next !== null) {
-//     total = next;
-//   } else if (operation !== null) {
-//     total = operate(total, next, operation);
-//   } else {
-//     operation = buttonName;
-//     next = null;
-//   }
-//   return { total, next, operation };
-// };
 
 export default calculate;
