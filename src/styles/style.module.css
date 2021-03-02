@@ -5,17 +5,13 @@
   src: url(./Digital7-1e1Z.ttf);
 }
 
-body {
-  font-family: digital, sans-serif;
-  font-size: 2em;
-}
-
 .app {
   /* display: flex; */
   width: 700px;
 }
 
 .display {
+  font-family: digital, sans-serif;
   display: flex;
   background-color: lightgrey;
   height: 100px;

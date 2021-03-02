@@ -23,10 +23,15 @@ const App = () => {
   }
 
   return (
-    <div className={styles.app}>
-      <Display result={showResult} />
-      <ButtonPanel clickHandler={handleClick} />
-    </div>
+    <>
+      <div>
+        <h1>Let&apos;s do some math!</h1>
+      </div>
+      <div className={styles.app}>
+        <Display result={showResult} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
+    </>
   );
 };
 
