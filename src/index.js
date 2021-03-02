@@ -1,4 +1,10 @@
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './components/Routes';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>,
+  document.getElementById('root'),
+);
