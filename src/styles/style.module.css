@@ -5,6 +5,16 @@
 
 .display {
   display: flex;
+  background-color: lightgrey;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 0 1em;
+  align-items: center;
+}
+
+.display h1 {
+  margin-left: auto;
 }
 
 .buttonPanel {
