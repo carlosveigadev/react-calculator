@@ -1,3 +1,15 @@
+@font-face {
+  font-family: digital;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Digital7-1e1Z.ttf);
+}
+
+body {
+  font-family: digital, sans-serif;
+  font-size: 2em;
+}
+
 .app {
   /* display: flex; */
   width: 700px;
@@ -24,13 +36,14 @@
 
 .button {
   width: 25%;
-  border: lightgrey;
+  border: 1px solid lightgray;
+  font-size: 1em;
 }
 
 .button:hover {
   background-color: white;
 }
 
-.button0 {
+.button50 {
   width: 50%;
 }
