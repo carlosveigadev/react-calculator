@@ -18,6 +18,7 @@ const calculate = (data, buttonName) => {
         operation = null;
         break;
       case '=':
+        // check operation is divisian and next is 0 show error
         if (total !== null && operation !== null) {
           total = operate(total, next, operation);
         } else {
@@ -28,6 +29,9 @@ const calculate = (data, buttonName) => {
         break;
 
       default:
+        // check operation is divisian and next is 0 show error
+        // - check if operation is nill and if next is nill -1
+        // - check if operation is nill (* or /) and if next is nill -1
         if (operation !== null && total !== null) {
           total = operate(next, total, operation);
         } else if (next !== null) {
