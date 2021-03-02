@@ -9,8 +9,8 @@ const calculate = (values, buttonName) => {
   } else {
     switch (buttonName) {
       case '+/-':
-        total = operate(total, '-1', 'X');
-        next = operate(next, '-1', 'X');
+        total = operate(total, '-1', 'x');
+        next = operate(next, '-1', 'x');
         break;
       case 'AC':
         total = null;
@@ -34,7 +34,7 @@ const calculate = (values, buttonName) => {
           total = 'Error, You could destroy the world if you divide by 0.';
           operation = null;
           next = null;
-        } else if ((operation === null || operation === '÷' || operation === 'X') && buttonName === '-' && next === null) {
+        } else if ((operation === null || operation === '÷' || operation === 'x') && buttonName === '-' && next === null) {
           next = buttonName;
         } else {
           if (operation !== null && total !== null) {
