@@ -1,5 +1,8 @@
+import Navbar from './Navbar';
+
 const Home = () => (
   <>
+    <Navbar />
     <h1>Welcome to our page!</h1>
     <p>
       Lorem ipsum dolor sit

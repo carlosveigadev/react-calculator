@@ -3,6 +3,7 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 import styles from '../styles/style.module.css';
+import Navbar from './Navbar';
 
 const App = () => {
   const [values, setValues] = useState({ total: null, next: null, operation: null });
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <>
+      <Navbar />
       <div>
         <h1>Let&apos;s do some math!</h1>
       </div>
