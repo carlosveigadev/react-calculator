@@ -33,7 +33,7 @@ const calculate = (values, buttonName) => {
 
       default:
         if (operation === '÷' && next === '0') {
-          total = 'Error, You could destroy the world if you divide by 0.';
+          total = 'Error, You could destroy the world if divide by 0.';
           operation = null;
           next = null;
         } else if ((operation === null || operation === '÷' || operation === 'x') && buttonName === '-' && next === null) {

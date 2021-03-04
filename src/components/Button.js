@@ -16,7 +16,7 @@ const Button = ({ name, clickHandler }) => {
   };
 
   return (
-    <button className={checkButton(name)} type="button" onClick={handleClick}>{name}</button>
+    <button className={checkButton(name)} data-testid={name} type="button" onClick={handleClick}>{name}</button>
   );
 };
 
