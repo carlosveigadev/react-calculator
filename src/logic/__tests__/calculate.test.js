@@ -10,7 +10,7 @@ describe('test the calculate function that makes the major calculations for the 
       const resultObject = calculate(values);
       expect(resultObject.next).toBe(null);
       expect(resultObject.operation).toBe(null);
-      expect(resultObject.total).toBe('Error, You could destroy the world if you divide by 0.');
+      expect(resultObject.total).toBe('Error, You could destroy the world if divide by 0.');
     });
 
     it('makes the value of number to be negative, using -, when operation is null', () => {
@@ -80,6 +80,34 @@ describe('test the calculate function that makes the major calculations for the 
       const buttonName = '+';
       const resultObject = calculate(values, buttonName);
       expect(resultObject.operation).toBe(buttonName);
+    });
+  });
+
+  describe('Add test for support digits (+/-, AC).', () => {
+    const values = { total: null, next: null, operation: null };
+    it('Changes the sign of the current digit and assign.', () => {
+      values.next = '5';
+      const buttonName = '+/-';
+      const resultObject = calculate(values, buttonName);
+      expect(resultObject.next).toBe('-5');
+    });
+
+    it('Changes the value of total to change sign.', () => {
+      values.total = '10';
+      const buttonName = '+/-';
+      const resultObject = calculate(values, buttonName);
+      expect(resultObject.total).toBe('-10');
+    });
+
+    it('resets the calculator', () => {
+      values.total = '10';
+      values.operation = '+';
+      values.next = '10';
+      const buttonName = 'AC';
+      const resultObject = calculate(values, buttonName);
+      expect(resultObject.total).toBe(null);
+      expect(resultObject.operation).toBe(null);
+      expect(resultObject.next).toBe(null);
     });
   });
 });
