@@ -71,4 +71,23 @@ describe('test the inputs and verifies if the right value is displayed in the ca
     userEvent.click(screen.getByTestId('='), leftClick);
     expect(screen.getByTestId('display').textContent).toContain('Error');
   });
+
+  it('displays every number and dots. ', () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
+    );
+    userEvent.click(screen.getByTestId('1'), leftClick);
+    userEvent.click(screen.getByTestId('2'), leftClick);
+    userEvent.click(screen.getByTestId('3'), leftClick);
+    userEvent.click(screen.getByTestId('4'), leftClick);
+    userEvent.click(screen.getByTestId('5'), leftClick);
+    userEvent.click(screen.getByTestId('6'), leftClick);
+    userEvent.click(screen.getByTestId('7'), leftClick);
+    userEvent.click(screen.getByTestId('8'), leftClick);
+    userEvent.click(screen.getByTestId('9'), leftClick);
+    userEvent.click(screen.getByTestId('0'), leftClick);
+    expect(screen.getByTestId('display').textContent).toBe('1234567890');
+  });
 });
