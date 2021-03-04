@@ -1,10 +1,11 @@
 import Navbar from './Navbar';
+import styles from '../styles/style.module.css';
 
-const Error = () => {
+const Error = () => (
   <>
     <Navbar />
-    <h1>Oops! Page not found!</h1>
-  </>;
-};
+    <h1 className={styles.error}>Oops! Page not found!</h1>
+  </>
+);
 
 export default Error;

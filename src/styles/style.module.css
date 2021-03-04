@@ -106,3 +106,8 @@ body {
 .buttonOrange:hover {
   background-color: orangered;
 }
+
+.error {
+  margin-top: 2em;
+  text-align: center;
+}
