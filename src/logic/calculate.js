@@ -9,7 +9,9 @@ const calculate = (values, buttonName) => {
   } else {
     switch (buttonName) {
       case '+/-':
-        total = operate(total, '-1', 'x');
+        if (total !== null) {
+          total = operate(total, '-1', 'x');
+        }
         next = operate(next, '-1', 'x');
         break;
       case 'AC':

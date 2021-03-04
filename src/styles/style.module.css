@@ -8,6 +8,7 @@
 body {
   background-color: #d0f4de;
   color: #476a6f;
+  margin: 0;
 }
 
 .flex {
@@ -36,16 +37,13 @@ body {
   color: #476a6f;
 }
 
-.links > *:hover {
-  color: #d0f4de;
+.links > *:hover,
+.linkActive {
+  color: #59b47c;
 }
 
-.links > *:visited {
+.link > *:visited {
   text-decoration: none;
-}
-
-.links > *:active {
-  color: #d0f4de;
 }
 
 .quote {
