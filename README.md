@@ -8,6 +8,14 @@ In this project, I built a Calculator using React. The main objective of this pr
 - React;
 - Heroku.
 
+## **Sample**
+
+<div style="text-align: center;">
+  <a href="https://react-calculator-chveiga.herokuapp.com">
+      <img src="demo.gif" width="100%">
+  </a>
+</div>
+
 ## **Live Demo**
 
 [Live Demo Link](https://react-calculator-chveiga.herokuapp.com)
