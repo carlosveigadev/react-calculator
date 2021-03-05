@@ -10,7 +10,7 @@ In this project, I built a Calculator using React. The main objective of this pr
 
 ## **Live Demo**
 
-[Live Demo Link](https://react-calculator-chveiga.herokuapp.com//)
+[Live Demo Link](https://react-calculator-chveiga.herokuapp.com)
 
 
 ## **Getting Started**
