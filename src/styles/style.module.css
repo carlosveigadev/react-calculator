@@ -1,0 +1,113 @@
+@font-face {
+  font-family: digital;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Digital7-1e1Z.ttf);
+}
+
+body {
+  background-color: #d0f4de;
+  color: #476a6f;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  padding: 2em 2em;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcf6bd;
+  padding: 0 1em;
+  margin: 0;
+  font-size: 1.5em;
+  color: #476a6f;
+}
+
+.links > * {
+  padding: 0 0.5em;
+  text-decoration: none;
+  color: #476a6f;
+}
+
+.links > *:hover,
+.linkActive {
+  color: #59b47c;
+}
+
+.link > *:visited {
+  text-decoration: none;
+}
+
+.quote {
+  margin-top: 3em;
+  padding: 0 3em;
+  text-align: center;
+}
+
+.home {
+  padding: 0 0.5em;
+}
+
+.home p {
+  margin: 2em 0;
+}
+
+.app {
+  /* display: flex; */
+  width: 700px;
+}
+
+.display {
+  font-family: digital, sans-serif;
+  display: flex;
+  background-color: lightgrey;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 0 1em;
+  align-items: center;
+}
+
+.display h1 {
+  margin-left: auto;
+}
+
+.buttonPanel {
+  display: flex;
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  border: 1px solid lightgray;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button50 {
+  width: 50%;
+}
+
+.buttonOrange {
+  background-color: orange;
+}
+
+.buttonOrange:hover {
+  background-color: orangered;
+}
+
+.error {
+  margin-top: 2em;
+  text-align: center;
+}

@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/style.module.css';
 
 const Display = ({ result }) => (
-  <div>
-    <h1>{result}</h1>
+  <div className={styles.display}>
+    <h1 data-testid="display">{result}</h1>
   </div>
 );
 
